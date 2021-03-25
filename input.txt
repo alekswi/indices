@@ -1,0 +1,24 @@
+One of Lem’s major recurring themes, beginning from his very first
+novel, The Man from Mars\index{book}{The Man from Mars}, was the
+impossibility\index{problems}{impossibility} of communication between
+profoundly alien beings\index{problems}{aliens}, which may have no
+common ground with human intelligence\index{problems}{human intelligence},
+and humans\index{problems}{humans}. The best known
+example is the living planetary ocean\index{problems}{living ocean}
+in Lem’s novel Solaris\index{book}{Solaris}. Other examples include
+swarms of mechanical insects (in The Invincible),
+\index{book}{The Invincible} and strangely ordered societies
+of more human-like beings in Fiasco and Eden, describing the failure
+of the first contact\index{problems}{contact}. In His Master’s Voice,
+\index{book}{His Master’s Voice} Lem describes the failure of
+humanity’s intelligence to decipher and truly comprehend an apparent
+message\index{problems}{message} from space. Two overlapping arcs
+of short stories, Fables for Robots\index{book}{Fables for Robots}
+(Bajki Robotów), translated in the collection Mortal Engines), and
+The Cyberiad\index{book}{Cyberiad} (Cyberiada) provide a commentary
+on humanity in the form of a series of grotesque, humorous,
+fairytale-like short stories about a mechanical universe inhabited
+by robots\index{problems}{robot} (who have occasional contact with
+biological "slimies" and human "palefaces").
+\printindex{book}{List of books}
+\printindex{problems}{List of problems}

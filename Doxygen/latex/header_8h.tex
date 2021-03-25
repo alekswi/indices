@@ -1,0 +1,165 @@
+\hypertarget{header_8h}{}\doxysection{header.\+h File Reference}
+\label{header_8h}\index{header.h@{header.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_index}{Index}}
+\item 
+struct \mbox{\hyperlink{struct_record}{Record}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{header_8h_a1ac0073e9174073e248e1e92bbb99e7f}{add\+Record}} (\mbox{\hyperlink{struct_record}{Record}} $\ast$\&head, string data, int verse)
+\item 
+void \mbox{\hyperlink{header_8h_ae656b5eb5521d76ef7e2da68807d182d}{add\+Index}} (\mbox{\hyperlink{struct_index}{Index}} $\ast$\&head, string entry, int verse)
+\item 
+\mbox{\hyperlink{struct_record}{Record}} $\ast$ \mbox{\hyperlink{header_8h_a56155ea037528ff2ca2135934d4e5a47}{search}} (\mbox{\hyperlink{struct_record}{Record}} $\ast$\&head, string name)
+\item 
+string \mbox{\hyperlink{header_8h_a3c2331d4a4bb3414e9a9cda68d95e080}{cut}} (string x)
+\item 
+void \mbox{\hyperlink{header_8h_a88ae7391e7623b01c26bc8d2b6c8e9f0}{print\+\_\+to\+\_\+file}} (string everything, string output\+\_\+file)
+\item 
+string \mbox{\hyperlink{header_8h_aac507c053bb8b146f67ba6ce6b4cec4b}{entries}} (\mbox{\hyperlink{struct_index}{Index}} $\ast$\&head)
+\item 
+string \mbox{\hyperlink{header_8h_a1f6a4f5fcfd36570ed909bfe9c575e41}{table}} (\mbox{\hyperlink{struct_record}{Record}} $\ast$\&head, string data)
+\item 
+void \mbox{\hyperlink{header_8h_a23a377ac4532275174a7270e44a130a2}{clean\+\_\+memory}} (\mbox{\hyperlink{struct_record}{Record}} $\ast$\&head)
+\item 
+void \mbox{\hyperlink{header_8h_ad41e935c0d719cf2da8ff2b5e996a809}{read\+\_\+file}} (string input\+\_\+file, string output\+\_\+file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{header_8h_ae656b5eb5521d76ef7e2da68807d182d}\label{header_8h_ae656b5eb5521d76ef7e2da68807d182d}} 
+\index{header.h@{header.h}!addIndex@{addIndex}}
+\index{addIndex@{addIndex}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{addIndex()}{addIndex()}}
+{\footnotesize\ttfamily void add\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_index}{Index}} $\ast$\&}]{head,  }\item[{string}]{entry,  }\item[{int}]{verse }\end{DoxyParamCaption})}
+
+Dodawanie na koncu listy nowego indexu 
+\begin{DoxyParams}{Parameters}
+{\em head} & wskaznik na poczatek listy \\
+\hline
+{\em data} & string zawierajacy wejscie indexu \\
+\hline
+{\em verse} & numer wersu, w ktorym znajdowal sie index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{header_8h_a1ac0073e9174073e248e1e92bbb99e7f}\label{header_8h_a1ac0073e9174073e248e1e92bbb99e7f}} 
+\index{header.h@{header.h}!addRecord@{addRecord}}
+\index{addRecord@{addRecord}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{addRecord()}{addRecord()}}
+{\footnotesize\ttfamily void add\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_record}{Record}} $\ast$\&}]{head,  }\item[{string}]{data,  }\item[{int}]{verse }\end{DoxyParamCaption})}
+
+Dodanie nowego rekordu 
+\begin{DoxyParams}{Parameters}
+{\em head} & wskaznik na poczatek glownej listy \\
+\hline
+{\em data} & string zawierajacy nazwe i wejscie indexu \\
+\hline
+{\em verse} & numer wersu, w ktorym znajdowal sie index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{header_8h_a23a377ac4532275174a7270e44a130a2}\label{header_8h_a23a377ac4532275174a7270e44a130a2}} 
+\index{header.h@{header.h}!clean\_memory@{clean\_memory}}
+\index{clean\_memory@{clean\_memory}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{clean\_memory()}{clean\_memory()}}
+{\footnotesize\ttfamily void clean\+\_\+memory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_record}{Record}} $\ast$\&}]{head }\end{DoxyParamCaption})}
+
+Czyszczenie pamieci 
+\begin{DoxyParams}{Parameters}
+{\em head} & wskaznik na poczatek glownej listy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{header_8h_a3c2331d4a4bb3414e9a9cda68d95e080}\label{header_8h_a3c2331d4a4bb3414e9a9cda68d95e080}} 
+\index{header.h@{header.h}!cut@{cut}}
+\index{cut@{cut}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{cut()}{cut()}}
+{\footnotesize\ttfamily string cut (\begin{DoxyParamCaption}\item[{string}]{x }\end{DoxyParamCaption})}
+
+Wycinanie z stringa nazwy i wejscia indexu 
+\begin{DoxyParams}{Parameters}
+{\em x} & string do wyciecia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wyciety string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_aac507c053bb8b146f67ba6ce6b4cec4b}\label{header_8h_aac507c053bb8b146f67ba6ce6b4cec4b}} 
+\index{header.h@{header.h}!entries@{entries}}
+\index{entries@{entries}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{entries()}{entries()}}
+{\footnotesize\ttfamily string entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_index}{Index}} $\ast$\&}]{head }\end{DoxyParamCaption})}
+
+Zwrocenie wejscia indexu 
+\begin{DoxyParams}{Parameters}
+{\em head} & wskaznik na poczatek listy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wszystkie wystapienia danego indexu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_a88ae7391e7623b01c26bc8d2b6c8e9f0}\label{header_8h_a88ae7391e7623b01c26bc8d2b6c8e9f0}} 
+\index{header.h@{header.h}!print\_to\_file@{print\_to\_file}}
+\index{print\_to\_file@{print\_to\_file}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{print\_to\_file()}{print\_to\_file()}}
+{\footnotesize\ttfamily void print\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{everything,  }\item[{string}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+Wypisywanie informacji do pliku 
+\begin{DoxyParams}{Parameters}
+{\em everything} & string do wypisania do pliku \\
+\hline
+{\em output\+\_\+file} & nazwa pliku do zapisu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{header_8h_ad41e935c0d719cf2da8ff2b5e996a809}\label{header_8h_ad41e935c0d719cf2da8ff2b5e996a809}} 
+\index{header.h@{header.h}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}}
+{\footnotesize\ttfamily void read\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{input\+\_\+file,  }\item[{string}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+Czytanie pliku 
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+file} & nazwa pliku do czytania \\
+\hline
+{\em output\+\_\+file} & nazwia pliku do zapisania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{header_8h_a56155ea037528ff2ca2135934d4e5a47}\label{header_8h_a56155ea037528ff2ca2135934d4e5a47}} 
+\index{header.h@{header.h}!search@{search}}
+\index{search@{search}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_record}{Record}}$\ast$ search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_record}{Record}} $\ast$\&}]{head,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+Przeszukiwanie czy istnieje record i zwrocenie pozycji 
+\begin{DoxyParams}{Parameters}
+{\em head} & wskaznik na poczatek glownej listy \\
+\hline
+{\em name} & string zawierajacy nazwe indexu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wskaznik na znaleziony record z podana nazwa indexu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_a1f6a4f5fcfd36570ed909bfe9c575e41}\label{header_8h_a1f6a4f5fcfd36570ed909bfe9c575e41}} 
+\index{header.h@{header.h}!table@{table}}
+\index{table@{table}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{table()}{table()}}
+{\footnotesize\ttfamily string table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_record}{Record}} $\ast$\&}]{head,  }\item[{string}]{data }\end{DoxyParamCaption})}
+
+Zwrocenie wszystkich wejsc w indexie i nazwy indeksu 
+\begin{DoxyParams}{Parameters}
+{\em head} & wskaznik na poczatek glownej listy \\
+\hline
+{\em data} & string zawierajacy nazwe indexu i artykulu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string zawierajacy nazwe indexu i jego wszystkie wejscia 
+\end{DoxyReturn}
