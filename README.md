@@ -1,6 +1,6 @@
 Program for indexing files.
 
-An index is labelled in a text with a
+An index is labelled in a text with a:
 \index{index name}{index entry}
 
 An index is printed with a command:
